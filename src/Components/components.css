@@ -1,6 +1,3 @@
-    /* Contact page CSS */
-/* ------------------------- */
-
 .contact-container, .projects-container {
     display: grid;
     /* Create 4 columns */
@@ -47,14 +44,12 @@
     background-color: #4b16c8;
 }
 
-.contact-links button:active, .projects-links button::active {
+.contact-links button:active, .projects-links button:active {
     background-color: #a393ca;
     transform: scale(1.5);
 }
 
-.linkedin-profile {
-
+.myPdf {
+    width: 75%;
+    height: 80vh;
 }
-
-    /* Home page CSS */
-/* ------------------------- */

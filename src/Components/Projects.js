@@ -1,6 +1,6 @@
 import React from 'react';
 import developer from '../Images/developer_activity.svg';
-import './components.css'
+import './Components.css';
 
 const Projects = () => {
 	const handleGithubClick = () => {
@@ -8,7 +8,7 @@ const Projects = () => {
 		window.location.href = 'https://www.github.com/aanand93';
 	};
 	return (
-		<div>
+		<div className='project-wrapper'>
 			<h1>Projects</h1>
 			<div className='projects-container'>
 				<img src={developer} alt='developer' className='projects-image' />
