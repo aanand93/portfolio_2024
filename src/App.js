@@ -5,6 +5,7 @@ import Home from './Components/Home';
 import NavBar from './NavBar/NavBar';
 import Contact from './Components/Contact';
 import Resume from './Components/Resume';
+import Footer from './Footer/Footer';
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 						<Route path='/Resume' element={<Resume />} />
 					</Routes>
 				</main>
+				<Footer />
 			</div>
 		</div>
 	);
