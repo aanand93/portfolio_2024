@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  portfolio_2024:
+    build: ./
+    container_name: portfolio_2024_c
+    ports:
+      - '3000:3000'
+    volumes: 
+      - ./src/:/app/src
+    stdin_open: true
+    tty: true
