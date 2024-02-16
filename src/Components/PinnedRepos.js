@@ -3,6 +3,7 @@ import { graphql } from '@octokit/graphql';
 
 const PinnedRepos = ({ username }) => {
 	const [repos, setRepos] = useState([]);
+	const githubToken = process.env.REACT_APP_GITHUB_TOKEN;
 
 	useEffect(() => {
 		const fetchPinnedRepos = async () => {
@@ -36,7 +37,7 @@ const PinnedRepos = ({ username }) => {
 					{
 						login: username,
 						headers: {
-							authorization: `token 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`,
+							authorization: `token ${githubToken}`,
 						},
 					}
 				);
@@ -55,17 +56,18 @@ const PinnedRepos = ({ username }) => {
 			<ul>
 				{repos.map((repo) => (
 					<a className='' href={repo.url}>
-
-					<li className='card' key={repo.id}>
-						<a href={repo.url}>{repo.name}</a>
-						<p>{repo.description}</p>
-						{repo.languages && (
-							<p className='languages'>
-								Languages:{' '}
-								{repo.languages.edges.map((edge) => edge.node.name).join(', ')}
-							</p>
-						)}
-					</li>
+						<li className='card' key={repo.id}>
+							<a href={repo.url}>{repo.name}</a>
+							<p>{repo.description}</p>
+							{repo.languages && (
+								<p className='languages'>
+									Languages:{' '}
+									{repo.languages.edges
+										.map((edge) => edge.node.name)
+										.join(', ')}
+								</p>
+							)}
+						</li>
 					</a>
 				))}
 			</ul>
