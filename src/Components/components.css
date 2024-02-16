@@ -1,4 +1,4 @@
-.contact-container, .projects-container {
+.contact-container, .projects-container, .home-container {
     display: grid;
     /* Create 4 columns */
     grid-template-columns: repeat(4, 1fr);
@@ -6,7 +6,7 @@
     
 }
 
-.contact-image, .projects-image {
+.contact-image, .projects-image, .home-image {
     /* Ensures the image doesn't exceed the width of its container */
     max-width: 80%;
     grid-column: 1 / span 2;
@@ -14,7 +14,7 @@
     
 }
 
-.contact-links, .projects-links {
+.contact-links, .projects-links, .home-links {
     grid-column: 3 / span 2;
     display: flex;
     flex-direction: column;
@@ -52,4 +52,15 @@
 .myPdf {
     width: 75%;
     height: 80vh;
+}
+
+.home {
+    padding-right: 59px;
+}
+
+.home li {
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    
 }
