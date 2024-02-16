@@ -32,10 +32,7 @@ a:link {
   padding: 1em;
 }
 
-/* Visted Link */
-a:visited {
-  color: green;
-}
+
 
 /* Hover Over Link */
 a:hover {

@@ -1,13 +1,15 @@
 .footer {
     padding: 20px;
     padding-top: 30px;
+    
 }
 
 .footer-line {
 
     border-style:double;
     border-width: 2px;
-    border-color: rgba(56, 56, 205, 0.422);
+    border-color: #333;
+    /* border-color: rgba(56, 56, 205, 0.422); */
     width: 50%;
 }
 
@@ -18,4 +20,9 @@
 .footer-links {
     padding-bottom: 10px;
     font-size: small;
+    text-decoration: none;
+}
+
+.footer-link {
+    text-decoration: none;
 }
