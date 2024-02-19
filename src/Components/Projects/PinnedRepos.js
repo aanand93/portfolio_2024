@@ -57,7 +57,7 @@ const PinnedRepos = ({ username }) => {
 			<h2>Pinned Repositories</h2>
 			<div className='repos-list'>
 				{repos.map((repo) => (
-					<a className='' href={repo.url} alt='list of repos'>
+					<a key={repo.id} href={repo.url} alt='list of repos'>
 						<li className='card' key={repo.id}>
 							<h4 href={repo.url} alt='repo in list'>
 								{repo.name}
