@@ -1,6 +1,6 @@
 import React from 'react';
-import contact from './../Images/contact.svg';
-import './Components.css';
+import contact from './../../Images/contact.svg';
+import './Contact.css';
 
 const Contact = () => {
 	const handleLinkedInClick = () => {

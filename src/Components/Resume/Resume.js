@@ -1,5 +1,6 @@
 import React from 'react';
-import pdf from '../Images/Alexander_Anand_Resume_2024.pdf'
+import pdf from '../../Images/Alexander_Anand_Resume_2024.pdf'
+import './Resume.css'
 
 const Resume = () => {
 	return (

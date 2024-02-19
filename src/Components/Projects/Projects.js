@@ -1,7 +1,6 @@
 import React from 'react';
-import developer from '../Images/developer_activity.svg';
 import GitHubRepos from './PinnedRepos';
-import './Components.css';
+import './Projects.css';
 
 const Projects = () => {
 	const handleGithubClick = () => {
@@ -15,11 +14,10 @@ const Projects = () => {
 			<button
 				onClick={handleGithubClick}
 				alt='Github Profile'
-				className='button'>
+				className='projects-button'>
 				Github
 			</button>
 			<div className='projects-container'>
-				<img src={developer} alt='developer' className='projects-image' />
 				<div className='projects-links'>
 					<GitHubRepos username='aanand93' />
 				</div>

@@ -1,6 +1,6 @@
 import React from 'react';
-import './Components.css';
-import home from '../Images/programmer2.svg';
+import './Home.css';
+import home from '../../Images/programmer2.svg';
 
 const Home = () => {
 	return (

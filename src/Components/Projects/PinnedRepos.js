@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { graphql } from '@octokit/graphql';
+import './Projects.css';
 
 const PinnedRepos = ({ username }) => {
 	const [repos, setRepos] = useState([]);
@@ -53,11 +54,13 @@ const PinnedRepos = ({ username }) => {
 	return (
 		<div className='pinned-repos'>
 			<h2>Pinned Repositories</h2>
-			<ul>
+			<div className='repos-list'>
 				{repos.map((repo) => (
-					<a className='' href={repo.url}>
+					<a className='' href={repo.url} alt='list of repos'>
 						<li className='card' key={repo.id}>
-							<a href={repo.url}>{repo.name}</a>
+							<h4 href={repo.url} alt='repo in list'>
+								{repo.name}
+							</h4>
 							<p>{repo.description}</p>
 							{repo.languages && (
 								<p className='languages'>
@@ -70,7 +73,7 @@ const PinnedRepos = ({ username }) => {
 						</li>
 					</a>
 				))}
-			</ul>
+			</div>
 		</div>
 	);
 };
