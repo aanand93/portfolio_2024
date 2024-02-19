@@ -7,6 +7,7 @@ const PinnedRepos = ({ username }) => {
 	const githubToken = process.env.REACT_APP_GITHUB_TOKEN;
 
 	useEffect(() => {
+		/* This method utilizes graphql by querying github and only pulling the pinned repos from an account.  To re-use, change the username in the projects component and also update the github token in this token via your .env file.  This query pulls the id, name, desciprtion, url, and languages used. */
 		const fetchPinnedRepos = async () => {
 			try {
 				const { user } = await graphql(

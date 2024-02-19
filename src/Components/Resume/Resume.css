@@ -1,4 +1,22 @@
+/* Default styles for all screen sizes */
 .myPdf {
-    width: 75%;
-    height: 80vh;
+    width: 100%;
+    /* Take up full width on smaller screens */
+    height: 70vh;
+    /* Reduce height for smaller screens */
+}
+
+.resume-wrapper {
+    text-align: center;
+    /* Center align content */
+}
+
+/* Media query for screens larger than 768px (tablets and desktops) */
+@media (min-width: 768px) {
+    .myPdf {
+        width: 75%;
+        /* Restore width for larger screens */
+        height: 80vh;
+        /* Restore height for larger screens */
+    }
 }
