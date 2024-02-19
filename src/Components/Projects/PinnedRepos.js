@@ -50,7 +50,7 @@ const PinnedRepos = ({ username }) => {
 		};
 
 		fetchPinnedRepos();
-	}, [username]);
+	}, [githubToken, username]);
 
 	return (
 		<div className='pinned-repos'>
