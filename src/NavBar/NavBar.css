@@ -10,6 +10,7 @@
 
 .navbar-toggle {
     cursor: pointer;
+    visibility: hidden;;
 }
 
 .menu-icon {
@@ -69,6 +70,11 @@
     .navbar {
         height: 60px;
         /* Adjust nav height for small screens */
+    }
+
+    .navbar-toggle {
+        cursor: pointer;
+        visibility: visible;
     }
 
     .Links {
